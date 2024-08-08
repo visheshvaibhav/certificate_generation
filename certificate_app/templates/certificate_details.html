@@ -1,0 +1,29 @@
+<!-- certificate_app/templates/certificate_details.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Details</title>
+</head>
+<body>
+    <h1>Certificate Details</h1>
+    <p>Recipient Name: {{ certificate.recipient_name }}</p>
+    <p>Certificate ID: {{ certificate.certificate_id }}</p>
+     Display other certificate details here if needed -->
+<!-- </body>
+</html> --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Details</title>
+</head>
+<body>
+    <h1>Certificate Details</h1>
+    <p>Recipient Name: <b>{{ certificate.recipient_name }} </b></p>
+    <p>Position: <b>{{ certificate.position }}  </b></p>
+    <p>Certificate ID: <b>{{ certificate.certificate_id }} </b></p>
+    <p>Type: <b>Internship</b></p>
+    <p>Duration: <b>{{ certificate.start_date }} to {{ certificate.end_date }} </b></p>
+    <p>Issue Date: <b>{{ certificate.issue_date }}</b></p>
+</body>
+</html>

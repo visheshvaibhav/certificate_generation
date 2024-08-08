@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Generator</title>
+</head>
+<body>
+    <h1>Certificate Generator</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="recipient_name">Recipient Name:</label>
+        <input type="text" id="recipient_name" name="recipient_name" required>  
+        <br>
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required>  
+        <br>
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        <br>
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required>
+        <br>
+        <label for="issue_date">Issue Date:</label>
+        <input type="date" id="issue_date" name="issue_date" required>
+        <br>
+        <input type="submit" value="Generate Certificate">
+    </form>
+    <br>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Generator</title>
+</head>
+<body>
+    <h1>Certificate Generator</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="recipient_name">Recipient Name:</label>
+        <input type="text" id="recipient_name" name="recipient_name">  <!-- Make sure the name attribute is set correctly -->
+        <!-- <input type="submit" value="Generate Certificate">
+    </form>
+    <br>
+</body>
+</html> --> 
